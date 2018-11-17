@@ -10,8 +10,13 @@ html {
 
 
 /*body container*/
-.body {
+body {
   margin: 0;
+  background-color: #f4f7fb;
+  opacity: 1;
+}
+.header, footer {
+  background-color: #cdd1d4;
 }
 
 body h1 {
@@ -47,7 +52,8 @@ body a {
 footer p {
   font-family: "Merriweather", serif;
   font-size: 0.87rem;
-  font-weight: lighter;
+  font-weight: bold;
+  color: #292e33;
 }
 
 /*header section*/
@@ -58,8 +64,7 @@ footer p {
   margin: 0 auto;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
-  border: 1px solid darkred;
+  border-bottom: 1px solid white;
 }
 .logo-container {
   display: flex;
@@ -67,28 +72,31 @@ footer p {
   height: 100%;
   margin: 0 auto;
   font-size: 1rem;
-  border: 1px solid green;
 }
 .logo-img {
   display: flex;
+  padding: 1px 1px;
+  background-color: #f4f7fb;
+  opacity: 0.72;
   justify-content: center;
+  align-items: center;
 }
 .logo-title {
   display: flex;
   height: 32px;
   align-items: center;
-  color: 	#696969;
+  color: 	#152935;
+  opacity: 0.78;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  border: 1px solid green;
 }
 .logo-title span {
-  color: #191970;
+  color: black;
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
+  opacity: 1.5rem;
 }
 #logo-left {
   display: flex;
@@ -99,7 +107,6 @@ footer p {
   width: 50%;
   height: 55px;
   margin-left: 24px;
-  border: 1px solid orange;
 }
 #logo-right {
   display: flex;
@@ -107,13 +114,11 @@ footer p {
   justify-content: flex-end;
   width: 50%;
   margin-right: 24px;
-  border: 1px solid green;
 }
 .navigation {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  border: 1px solid yellow;
 }
 nav span {
   display: inline-block;
