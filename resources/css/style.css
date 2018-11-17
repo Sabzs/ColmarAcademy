@@ -8,6 +8,48 @@ html {
   font-size: 18px;
 }
 
+
+/*body container*/
+.body {
+  margin: 0;
+}
+
+body h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #292e33;
+}
+body h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #292e33;
+}
+body h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  color: #292e33
+}
+body p {
+  font-family: "Merriweather", serif;
+  font-size: 1.02rem;
+  font-weight: lighter;
+  line-height: 1.2rem;
+}
+body a {
+  font-family: "Merriweather", serif;
+  font-size: 1.05rem;
+  font-weight: normal;
+}
+footer p {
+  font-family: "Merriweather", serif;
+  font-size: 0.87rem;
+  font-weight: lighter;
+}
+
 /*header section*/
 .header {
   display: flex;
@@ -22,10 +64,8 @@ html {
 .logo-container {
   display: flex;
   width: 100%;
-  height: 100%
+  height: 100%;
   margin: 0 auto;
-  font-family: Helvetica;
-
   font-size: 1rem;
   border: 1px solid green;
 }
@@ -37,7 +77,18 @@ html {
   display: flex;
   height: 32px;
   align-items: center;
+  color: 	#696969;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   border: 1px solid green;
+}
+.logo-title span {
+  color: #191970;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
 }
 #logo-left {
   display: flex;
@@ -72,17 +123,13 @@ a {
   color: Black;
   text-decoration: none;
 }
-/*body container*/
-.body {
-  margin: 0;
 
-}
 /*section Start*/
 .container-banner {
   display: flex;
   width: 100%;
   height: 70%;
-  padding-top: 32px 24px;
+
   border: 1px solid darkred;
 }
 .banner {
@@ -100,15 +147,18 @@ a {
   display: flex;
   border: 1px solid darkgreen;
   width: 40%;
-  align-items: center;
-  justify-content: center;
-  margin: 32px 24px 32px 0px;
   height: auto;
+  justify-content: center;
+  text-align: left;
+  margin: 32px 24px 32px 0px;
+  padding: 30px 30px 30px 20px;
   flex-direction: column;
 }
-.banner-content h4 {
+.banner-content h3 {
   display: flex;
+  text-align: left;
   padding: 30px 0px 30px 0;
+  font-size: 1.5rem;
 }
 
 /*section-start--campus information section*/
@@ -147,6 +197,8 @@ a {
   display: flex;
   margin: 32px 24px;
 }
+
+/*this Campus styling also affects section-end Campus*/
 .campus {
   display: flex;
   width: 40%;
@@ -163,7 +215,7 @@ a {
   width: 100%;
   height: 40%;
   margin-bottom: 5px;
-
+  border: 1px solid green;
 }
 .information-img {
   display: flex;
@@ -180,13 +232,13 @@ a {
   display: flex;
   width: 65%;
   height: auto;
-  align-items: center;
+  padding-left: 16px;
   justify-content: center;
   flex-direction: column;
 }
 .info p {
   display: flex;
-  padding: 30px 0px 30px 0px;
+  padding: 8px 0px 8px 0px;
 }
 
 /*Middle Section-learning- photo-grid*/
@@ -236,8 +288,14 @@ a {
 .learning-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  padding: 16px 0px 0px 16px;
+  border: 1px solid red;
+}
+.upper {
+  display: flex;
+  padding: 8px 0px 8px 0px;
+  text-transform: uppercase;
 }
 
 /*End Section...*/
@@ -279,7 +337,6 @@ video {
   display: flex;
   width: 95%;
   height: auto;
-
   margin: 0px 24px 24px 24px;
   border: 2px solid blue;
 }
@@ -288,29 +345,12 @@ video {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 24px 24px;
   border: 1px solid green;
 }
 .urban p {
   display: flex;
-  padding: 8px 0px 32px 0px;
-}
-
-.information-campus {
-  display: flex;
-  width: 100%;
-  height: 40%;
-  flex-direction: row;
-  border: 1px solid black;
-}
-.information-campus-img {
-  display: flex;
-  width: 35%;
-  height: auto;
-  padding: 16px 16px;
-}
-.info {
-  display: flex;
-  width: 65%;
+  padding-top: 8px;
 }
 
 /*footer section*/
