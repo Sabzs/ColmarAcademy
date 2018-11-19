@@ -9,7 +9,7 @@ html {
 }
 
 
-/*body container*/
+/*body container and Typography section*/
 body {
   margin: 0;
   background-color: #f4f7fb;
@@ -18,7 +18,6 @@ body {
 .header, footer {
   background-color: #cdd1d4;
 }
-
 body h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
@@ -55,6 +54,53 @@ footer p {
   font-weight: bold;
   color: #292e33;
 }
+/*Psuedo and animation styling section*/
+.btn-start-here {
+  background-color: rgba(177, 250, 214, 0.4);
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 50%;
+  transition: all ease-in-out 250ms;
+}
+.btn-start-here:hover {
+  background-color: rgba(9, 163, 9, 0.4);
+  color: black;
+  font-weight: bold;
+}
+.btn-read-more {
+  color: rgb(54, 242, 36);
+  padding: 1rem 2rem;
+  width: 50%;
+  transition: all ease-in-out 250ms;
+}
+.btn-read-more:hover {
+  background-color: rgba(9, 163, 9, 0.4);
+  color: black;
+  font-weight: bold;
+}
+.photo-grid {
+  background-color: rgba(6, 9, 7, 0.1);
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 250ms;
+}
+.photo-grid:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 18px 8px -10px rgba(0, 0, 0, 0.75);
+}
+nav span a:active {
+  color: rgba(9, 163, 9, 0.4);
+  font-weight: bold;
+}
+.logo-img {
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 250ms;
+  border-radius: 4px;
+}
+.logo-img:hover {
+  box-shadow: 0px 18px 8px -10px rgba(0, 0, 0, 0.75);
+  background-color: rgba(9, 163, 9, 0.4);
+  transform: translate3d(-10px);
+}
 
 /*header section*/
 .header {
@@ -64,7 +110,7 @@ footer p {
   margin: 0 auto;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid rgba(177, 250, 214, 0.4);
 }
 .logo-container {
   display: flex;
@@ -76,7 +122,7 @@ footer p {
 .logo-img {
   display: flex;
   padding: 1px 1px;
-  background-color: #f4f7fb;
+
   opacity: 0.72;
   justify-content: center;
   align-items: center;
@@ -96,7 +142,7 @@ footer p {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
-  opacity: 1.5rem;
+  opacity: 2;
 }
 #logo-left {
   display: flex;
@@ -134,14 +180,12 @@ a {
   display: flex;
   width: 100%;
   height: 70%;
-
-  border: 1px solid darkred;
+  background-color: rgba(132, 143, 131, 0.16)
 }
 .banner {
   width: 60%;
   height: 31rem;
   margin: 32px 24px;
-  border: 1px solid green;
 }
 .resize-banner {
   display: flex;
@@ -150,7 +194,6 @@ a {
 }
 .banner-content {
   display: flex;
-  border: 1px solid darkgreen;
   width: 40%;
   height: auto;
   justify-content: center;
@@ -171,21 +214,18 @@ a {
   display: flex;
   width: 100%;
   height: auto;
-  border: 1px solid darkred;
 }
 .information-main {
   display: flex;
   flex-direction: column;
   width: 60%;
   height: auto;
-  border: 1px solid black;
 }
 .information-main-img {
   display: flex;
   width: 100%;
   height: 75%;
   padding: 32px 24px;
-  border: 1.5px solid darkgreen;
 }
 .resize-information-main {
   display: flex;
@@ -211,7 +251,6 @@ a {
   margin-top: 1%;
   margin-bottom: 32px;
   flex-direction: column;
-
 }
 .information {
   display: flex;
@@ -220,7 +259,7 @@ a {
   width: 100%;
   height: 40%;
   margin-bottom: 5px;
-  border: 1px solid green;
+  background-color: rgba(72, 191, 63, 0.1);
 }
 .information-img {
   display: flex;
@@ -253,14 +292,12 @@ a {
   height: 100%;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid red;
 }
 .heading {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 32px 0px 32px 0px;
-  border: 1px solid green;
 }
 .container-start-learning {
   display: flex;
@@ -269,7 +306,6 @@ a {
   width: 100%;
   height: 100%;
   padding: 0px 72px 32px 72px;
-  border: 2px solid blue;
 }
 .photo-grid {
   display: flex;
@@ -277,7 +313,6 @@ a {
   height: 100%;
   margin: 0px 16px 32px 16px;
   flex-direction: column;
-  border: 1px solid black;
 }
 .resize-grid-img {
   display: flex;
@@ -295,7 +330,6 @@ a {
   flex-direction: column;
   text-align: left;
   padding: 16px 0px 0px 16px;
-  border: 1px solid red;
 }
 .upper {
   display: flex;
@@ -309,7 +343,6 @@ a {
   width: 100%;
   height: 100%;
   flex-direction: column;
-  border: 2px solid black;
 }
 .thesis {
   display: flex;
@@ -323,7 +356,6 @@ a {
   width: 100%;
   height: 100%;
   flex-direction: row;
-  border: 2px solid red;
 }
 
 .container2 {
@@ -331,7 +363,6 @@ a {
   width: 60%;
   height: auto;
   flex-direction: column;
-  border: 2px solid yellow;
 }
 .video-section {
   display: flex;
@@ -343,7 +374,6 @@ video {
   width: 95%;
   height: auto;
   margin: 0px 24px 24px 24px;
-  border: 2px solid blue;
 }
 
 .urban {
@@ -351,7 +381,6 @@ video {
   flex-direction: column;
   width: 100%;
   padding: 24px 24px;
-  border: 1px solid green;
 }
 .urban p {
   display: flex;
@@ -362,7 +391,6 @@ video {
 footer {
   width: 100%;
   height: 70px;
-  border: 2px solid black;
 }
 .footer-title {
   display: flex;
@@ -371,13 +399,13 @@ footer {
   padding: 16px 24px;
   flex-direction: row;
   justify-content: space-between;
+  border-top: 2px solid rgba(177, 250, 214, 0.4);
 }
 .copyright,
 .font-awesome,
 .privacy {
   display: flex;
   width: 400px;
-  border: 1px solid green;
 }
 .copyright {
   display: flex;
@@ -392,8 +420,15 @@ footer {
   display: flex;
   padding: 5px 5px;
   margin-bottom: 5px;
-  border: 1px solid black;
-  border-radius: 7px;
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 250ms;
+  border-radius: 4px;
+  border: 1px solid rgba(177, 250, 214, 0.4);   
+}
+.font-awesome a:hover {
+  transform: translate3d(-10px);
+  box-shadow: 0px 18px 8px -10px rgba(0, 0, 0, 0.75);
+  background-color: rgba(9, 163, 9, 0.4);
 }
 .privacy {
   display: flex;
