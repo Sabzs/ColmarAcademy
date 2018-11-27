@@ -11,6 +11,7 @@ html {
 
 /*body container and Typography section*/
 body {
+  width: 100%;
   margin: 0;
   background-color: #f4f7fb;
   opacity: 1;
@@ -18,30 +19,30 @@ body {
 .header, footer {
   background-color: #cdd1d4;
 }
-body h1 {
+body h1, h2, h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
+}
+body h1 {
+  font-size: 3rem;
   font-weight: 800;
-  color: #292e33;
+  color: #bd1427;
 }
 body h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #292e33;
 }
 body h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: left;
-  color: #292e33
+  color: #292e33;
 }
 body p {
-  font-family: "Merriweather", serif;
-  font-size: 1.02rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05rem;
   font-weight: lighter;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
 }
 body a {
   font-family: "Merriweather", serif;
@@ -60,10 +61,12 @@ footer p {
   padding: 1rem 2rem;
   text-align: center;
   width: 50%;
+  border-radius: 5px;
   transition: all ease-in-out 250ms;
 }
 .btn-start-here:hover {
   background-color: rgba(9, 163, 9, 0.4);
+  border-radius: 5px;
   color: black;
   font-weight: bold;
 }
@@ -75,6 +78,7 @@ footer p {
 }
 .btn-read-more:hover {
   background-color: rgba(9, 163, 9, 0.4);
+  border-radius: 5px;
   color: black;
   font-weight: bold;
 }
@@ -95,6 +99,7 @@ nav span a:active {
   box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
   transition: all ease-in-out 250ms;
   border-radius: 4px;
+  border: 1px solid rgba(177, 250, 214, 0.4);
 }
 .logo-img:hover {
   box-shadow: 0px 18px 8px -10px rgba(0, 0, 0, 0.75);
@@ -106,11 +111,13 @@ nav span a:active {
 .header {
   display: flex;
   width: 100%;
-  height: 64px;
+  height: 10%;
   margin: 0 auto;
+  position: fixed;
+  top: 0px; left: 0px; right: 0px;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 2px solid rgba(177, 250, 214, 0.4);
+  border-bottom: 1px solid rgba(171, 15, 7, 0.95)
 }
 .logo-container {
   display: flex;
@@ -118,52 +125,63 @@ nav span a:active {
   height: 100%;
   margin: 0 auto;
   font-size: 1rem;
-}
-.logo-img {
-  display: flex;
-  padding: 1px 1px;
-
-  opacity: 0.72;
-  justify-content: center;
-  align-items: center;
-}
-.logo-title {
-  display: flex;
-  height: 32px;
-  align-items: center;
-  color: 	#152935;
-  opacity: 0.78;
-  font-weight: bold;
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-}
-.logo-title span {
-  color: black;
-  font-weight: bold;
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-  opacity: 2;
+  border-bottom: 1px solid rgb(149, 240, 80);
 }
 #logo-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  margin: 0 auto;
   width: 50%;
-  height: 55px;
+  height: 100%;
   margin-left: 24px;
+}
+.logo-img {
+  display: flex;
+  padding: 1px 1px;
+  opacity: 0.72;
+  height: 70%;
+  width: 7%;
+  justify-content: center;
+  align-items: center;
+}
+.logo-title {
+  display: flex;
+  height: 70%;
+  width: 28%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.logo-title #left {
+  color: 	#152935;
+  width: 50%;
+  height: 100%;
+  opacity: 0.78;
+}
+.logo-title h4 {
+  width: 100%;
+}
+.logo-title #right {
+  color: black;
+  width: 50%;
+  height: 100%;
+  opacity: 2;
 }
 #logo-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
+  height: 100%;
   margin-right: 24px;
 }
 .navigation {
   display: flex;
   width: 100%;
+  height: auto;
   justify-content: flex-end;
 }
 nav span {
@@ -174,17 +192,27 @@ a {
   color: Black;
   text-decoration: none;
 }
-
+.display img {
+  display: none;
+  width: 50%;
+  justify-content: space-between;
+}
 /*section Start*/
+.start {
+  display: flex;
+flex-direction: column;
+  width: 100%;
+}
 .container-banner {
   display: flex;
   width: 100%;
   height: 70%;
-  background-color: rgba(132, 143, 131, 0.16)
+  background-color: rgba(132, 143, 131, 0.16);
+  padding-top: 64px;
 }
 .banner {
   width: 60%;
-  height: 31rem;
+  height: 60%;
   margin: 32px 24px;
 }
 .resize-banner {
@@ -209,7 +237,7 @@ a {
   font-size: 1.5rem;
 }
 
-/*section-start--campus information section*/
+/*section-start--CAMPUS information section*/
 .container-information {
   display: flex;
   width: 100%;
@@ -219,13 +247,16 @@ a {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding: 32px 24px;
   height: auto;
 }
 .information-main-img {
   display: flex;
   width: 100%;
-  height: 75%;
-  padding: 32px 24px;
+  height: 70%;
+}
+.information-img-display {
+  display: none;
 }
 .resize-information-main {
   display: flex;
@@ -234,14 +265,15 @@ a {
 }
 .info-content {
   display: flex;
-  margin: 0 auto;
-  align-items: center;
   flex-direction: column;
 }
-.info-content p {
+.info-content h2 {
   display: flex;
-  margin: 32px 24px;
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 24px;
 }
+
 
 /*this Campus styling also affects section-end Campus*/
 .campus {
@@ -271,6 +303,9 @@ a {
   width: 100%;
   height: 100%;
 }
+.resize-mobile {
+  display: none;
+}
 
 .info {
   display: flex;
@@ -286,6 +321,11 @@ a {
 }
 
 /*Middle Section-learning- photo-grid*/
+.middle {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 .container-grid {
   display: flex;
   width: 100%;
@@ -295,22 +335,25 @@ a {
 }
 .heading {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 32px 0px 32px 0px;
 }
-.container-start-learning {
+.container-mid-learning {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0px 72px 32px 72px;
 }
 .photo-grid {
   display: flex;
-  width: 30%;
+  width: 29%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 0px 16px 32px 16px;
   flex-direction: column;
 }
@@ -319,23 +362,22 @@ a {
   width: 100%;
   height: 100%;
 }
-.learning-img, .learning-info {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  flex-direction: row;
-}
 .learning-info {
   display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 16px 16px;
   flex-direction: column;
-  text-align: left;
-  padding: 16px 0px 0px 16px;
 }
 .upper {
   display: flex;
   padding: 8px 0px 8px 0px;
   text-transform: uppercase;
 }
+.container-middle-display {
+  display: none;
+}
+
 
 /*End Section...*/
 .container-thesis {
@@ -357,7 +399,6 @@ a {
   height: 100%;
   flex-direction: row;
 }
-
 .container2 {
   display: flex;
   width: 60%;
@@ -375,7 +416,6 @@ video {
   height: auto;
   margin: 0px 24px 24px 24px;
 }
-
 .urban {
   display: flex;
   flex-direction: column;
@@ -423,7 +463,7 @@ footer {
   box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
   transition: all ease-in-out 250ms;
   border-radius: 4px;
-  border: 1px solid rgba(177, 250, 214, 0.4);   
+  border: 1px solid rgba(177, 250, 214, 0.4);
 }
 .font-awesome a:hover {
   transform: translate3d(-10px);
@@ -434,3 +474,215 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
+
+/*MEDIA QUERY SECTION---*/
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+  header {
+   width: 100%;
+   height: 10%;
+}
+.logo-container {
+  display: none;
+}
+.display {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo-img-display {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img-display img {
+  display: flex;
+  padding: 1px 1px;
+  opacity: 0.72;
+  width: 40%;
+}
+.navigation {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 15px;
+}
+.navigation img {
+  display: flex;
+  width: 16%;
+  padding-left: 16px;
+  align-items: center;
+  justify-content: center;
+}
+/*Media Query for START section*/
+.container-banner {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  flex-direction: column;
+}
+.banner {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+}
+.banner-content {
+  display: flex;
+  width: 100%;
+  padding-top: 0px;
+}
+.banner-content h1 {
+  display: flex;
+  font-size: 2.2rem;
+}
+.banner-content h3 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.btn-start-here {
+  width: 100%;
+/*media query - section-start--campus information section*/
+}
+.information-main {
+  display: none;
+}
+.information-img .resize {
+  display: none;
+}
+.campus {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px 16px 16px;
+  justify-content: center;
+  align-items: center;
+}
+.information {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px 16px;
+}
+.information-img {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.resize-mobile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.info {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.btn-read-more {
+  display: flex;
+  width: 50%;
+}
+/*Media Query for MIDDLE -Section---*/
+.container-grid {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  display: none;
+}
+.heading-display {
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  background-color: rgba(9, 163, 9, 0.4);
+}
+.heading-display h2 {
+  display: flex;
+  font-size: 1.5rem;
+  height: 2.5rem;
+}
+.container-mid-learning {
+  display: none;
+}
+.container-middle-display {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px 16px 16px;
+  flex-direction: column;
+}
+.photo-grid-text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 8px;
+  flex-direction: column;
+}
+.middle-display {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  background-color: rgba(6, 9, 7, 0.1); /*change this color*/
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 250ms;
+}
+.middle-display:hover {
+  transform: translate3d(-10px);
+  box-shadow: 0px 18px 8px -10px rgba(0, 0, 0, 0.75);
+}
+/*Last Section (section-END)....*/
+.container-thesis {
+  display: flex;
+  width: 100%;
+}
+.Thesis h2 {
+  display: flex;
+  width: 100%;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+.container2, .video-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.urban {
+  display: none;
+}
+#campus-thesis {
+  display: none;
+}
+footer {
+  width: 100%;
+}
+.copyright {
+  display: flex;
+  width: 100%;
+}
+.font-awesome {
+  display: none;
+}
+.privacy {
+  display: none;
+}
+}
+@media only screen (min-width: 481px) and (max-width: 767px) and (orientation: landscape)
