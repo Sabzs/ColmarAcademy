@@ -8,7 +8,6 @@ html {
   font-size: 18px;
 }
 
-
 /*body container and Typography section*/
 body {
   width: 100%;
@@ -26,20 +25,20 @@ body h1 {
   font-size: 3.5rem;
   font-weight: 800;
   color: rgb(7, 2, 2);
-  opacity: 0.88;
+  opacity: 1;
 }
 body h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: rgb(7, 2, 2);
-  opacity: 0.88;
+  opacity: 1;
 }
 body h3 {
   font-size: 1.3rem;
   font-weight: bolder;
   text-align: left;
   color: #808000;
-  opacity: 0.5;
+  opacity: 1;
 }
 body p {
   font-family: "Roboto", sans-serif;
@@ -128,7 +127,6 @@ nav span a:active {
   justify-content: center;
   flex-direction: column;
   border-bottom: 1.8px solid #808000;
-  opacity: 1;
   z-index: 1;
 }
 .logo-container {
@@ -395,7 +393,6 @@ a {
   display: none;
 }
 
-
 /*End Section...*/
 .container-thesis {
   display: flex;
@@ -497,11 +494,7 @@ footer {
 /*Media Query for TABLETS...*/
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-header {
-  width: 100%;
-  height: 10%;
-}
-.header {
+ .header {
   display: flex;
   width: 100%;
   height: 10%;
@@ -511,7 +504,6 @@ header {
   justify-content: center;
   flex-direction: column;
   border-bottom: 1.8px solid #808000;
-  opacity: 1;
   z-index: 1;
 }
 .logo-container {
@@ -812,6 +804,7 @@ footer {
 header {
  width: 100%;
  height: 10%;
+ z-index: 1;
 }
 body h1 {
   font-size: 2.2rem;
@@ -1000,7 +993,6 @@ body a {
 }
 
 /*Last Section (section-END)....*/
-
 .container-thesis {
   display: flex;
   width: 100%;
